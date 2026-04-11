@@ -56,13 +56,13 @@ html, body {
 
 .sub {
   margin: 10px 0;
-  font-size: 14px;
+  font-size: 16px;
   color: #6b7c93;
 }
 
 .endpoint {
   margin-top: 18px;
-  font-size: 12px;
+  font-size: 16px;
   opacity: 0.6;
 }
 
