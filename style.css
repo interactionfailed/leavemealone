@@ -1,50 +1,70 @@
-body {
+html, body {
   margin: 0;
+  padding: 0;
+  height: 100%;
+
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #e9fffb, #f4f6f8);
   color: #1c1f23;
 
+  background: linear-gradient(135deg, #e9fffb, #f4f6f8);
+  overflow: hidden;
+}
+
+/* CENTER CONTAINER */
+body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
 /* MAIN CARD */
 .card {
   display: flex;
-  gap: 22px;
+  gap: 24px;
   align-items: center;
 
-  background: rgba(255,255,255,0.75);
-  padding: 32px;
-  border-radius: 18px;
+  padding: 34px;
+  border-radius: 20px;
 
-  box-shadow: 0 20px 60px rgba(0,0,0,0.10);
-  backdrop-filter: blur(12px);
+  background: rgba(255,255,255,0.75);
+  box-shadow: 0 25px 70px rgba(0,0,0,0.12);
+  backdrop-filter: blur(14px);
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 30px 90px rgba(0,0,0,0.15);
 }
 
 /* FOTO */
 .photo {
-  width: 170px;
-  height: 170px;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
   border-radius: 14px;
 
-  filter: grayscale(100%) contrast(1.15);
+  filter: grayscale(100%) contrast(1.1);
 }
 
-/* TEKST */
+/* INFO BLOCK */
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+/* NAAM */
 h1 {
   margin: 0;
   font-size: 32px;
 }
 
-/* VERIFIED */
+/* VERIFIED TEXT */
 .verified {
   margin: 6px 0;
-  color: #6b7c93;
   font-size: 14px;
+  color: #6b7c93;
 }
 
 /* STATUS ROW */
@@ -52,13 +72,14 @@ h1 {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin: 12px 0 16px 0;
 
-  color: #6b7c93;
+  margin: 12px 0 18px 0;
+
   font-size: 14px;
+  color: #6b7c93;
 }
 
-/* OFFLINE DOT (BELANGRIJK) */
+/* DOT */
 .dot {
   width: 10px;
   height: 10px;
@@ -66,17 +87,19 @@ h1 {
   display: inline-block;
 }
 
-/* grijs maar zichtbaar */
+/* OFFLINE (GRIJS maar zichtbaar) */
 .offline {
   background: #9aa0a6;
-  box-shadow: 0 0 8px rgba(154,160,166,0.45);
+  box-shadow: 0 0 10px rgba(154,160,166,0.4);
 }
 
-/* LINK */
+/* LINK (CONTACT) */
 .link {
+  font-size: 14px;
   text-decoration: none;
   color: #6b7c93;
-  font-size: 14px;
+
+  transition: color 0.2s ease;
 }
 
 .link:hover {
