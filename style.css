@@ -4,104 +4,77 @@ html, body {
   height: 100%;
 
   font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #f4f6f8, #e9eef5);
   color: #1c1f23;
 
-  background: linear-gradient(135deg, #e9fffb, #f4f6f8);
-  overflow: hidden;
-}
-
-/* CENTER CONTAINER */
-body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  overflow: hidden;
 }
 
 /* MAIN CARD */
 .card {
-  display: flex;
-  gap: 24px;
-  align-items: center;
+  text-align: center;
 
-  padding: 34px;
-  border-radius: 20px;
+  padding: 40px 35px;
+  border-radius: 18px;
 
-  background: rgba(255,255,255,0.75);
-  box-shadow: 0 25px 70px rgba(0,0,0,0.12);
+  background: rgba(255,255,255,0.7);
   backdrop-filter: blur(14px);
 
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 25px 80px rgba(0,0,0,0.12);
+
+  max-width: 420px;
+
+  animation: fadeIn 0.8s ease;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 30px 90px rgba(0,0,0,0.15);
-}
-
-/* FOTO */
-.photo {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 14px;
-
-  filter: grayscale(100%) contrast(1.1);
-}
-
-/* INFO BLOCK */
-.info {
-  display: flex;
-  flex-direction: column;
-}
-
-/* NAAM */
-h1 {
+/* BIG 404 TEXT */
+.card h1 {
+  font-size: 70px;
   margin: 0;
-  font-size: 32px;
+  letter-spacing: 2px;
 }
 
-/* VERIFIED TEXT */
-.verified {
-  margin: 6px 0;
+/* SUB TEXT */
+.card p {
+  margin: 10px 0;
   font-size: 14px;
   color: #6b7c93;
 }
 
-/* STATUS ROW */
-.status {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-
-  margin: 12px 0 18px 0;
-
-  font-size: 14px;
-  color: #6b7c93;
+/* SMALL “ENDPOINT” TEXT */
+.endpoint {
+  margin-top: 18px;
+  font-size: 12px;
+  opacity: 0.6;
 }
 
-/* DOT */
-.dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  display: inline-block;
+/* subtle glitch effect on hover */
+.card:hover h1 {
+  animation: glitch 0.3s infinite;
 }
 
-/* OFFLINE (GRIJS maar zichtbaar) */
-.offline {
-  background: #9aa0a6;
-  box-shadow: 0 0 10px rgba(154,160,166,0.4);
+/* FADE IN */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/* LINK (CONTACT) */
-.link {
-  font-size: 14px;
-  text-decoration: none;
-  color: #6b7c93;
-
-  transition: color 0.2s ease;
-}
-
-.link:hover {
-  color: #111;
+/* GLITCH (subtiel, niet overdreven) */
+@keyframes glitch {
+  0% { transform: translate(0); }
+  20% { transform: translate(-1px, 1px); }
+  40% { transform: translate(1px, -1px); }
+  60% { transform: translate(-1px, -1px); }
+  80% { transform: translate(1px, 1px); }
+  100% { transform: translate(0); }
 }
