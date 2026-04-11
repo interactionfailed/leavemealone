@@ -4,14 +4,32 @@ html, body {
   height: 100%;
 
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #f4f6f8, #e9eef5);
   color: #1c1f23;
+
+  background: linear-gradient(135deg, #f4f6f8, #e9eef5);
 
   display: flex;
   justify-content: center;
   align-items: center;
 
   overflow: hidden;
+}
+
+/* TOP LINK */
+.contact {
+  position: fixed;
+  top: 20px;
+  right: 25px;
+
+  font-size: 14px;
+  color: #6b7c93;
+  text-decoration: none;
+
+  transition: 0.2s ease;
+}
+
+.contact:hover {
+  color: #111;
 }
 
 /* MAIN CARD */
@@ -31,33 +49,28 @@ html, body {
   animation: fadeIn 0.8s ease;
 }
 
-/* BIG 404 TEXT */
+/* 404 TITLE */
 .card h1 {
   font-size: 70px;
   margin: 0;
   letter-spacing: 2px;
 }
 
-/* SUB TEXT */
-.card p {
+/* TEXT */
+.sub {
   margin: 10px 0;
   font-size: 14px;
   color: #6b7c93;
 }
 
-/* SMALL “ENDPOINT” TEXT */
+/* SMALL ENDPOINT */
 .endpoint {
   margin-top: 18px;
   font-size: 12px;
   opacity: 0.6;
 }
 
-/* subtle glitch effect on hover */
-.card:hover h1 {
-  animation: glitch 0.3s infinite;
-}
-
-/* FADE IN */
+/* ANIMATION */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -67,14 +80,4 @@ html, body {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-/* GLITCH (subtiel, niet overdreven) */
-@keyframes glitch {
-  0% { transform: translate(0); }
-  20% { transform: translate(-1px, 1px); }
-  40% { transform: translate(1px, -1px); }
-  60% { transform: translate(-1px, -1px); }
-  80% { transform: translate(1px, 1px); }
-  100% { transform: translate(0); }
 }
