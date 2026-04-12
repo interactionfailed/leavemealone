@@ -4,7 +4,7 @@ html, body {
   height: 100%;
   font-family: Arial, sans-serif;
   color: #1c1f23;
-  background: linear-gradient(135deg, #e9fffb, #f4f6f8);
+  background: linear-gradient(135deg, #ffe6f1, #f8f3ff);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,35 +24,40 @@ html, body {
 
 .contact:hover {
   color: #111;
-  transform: translateX(-3px);
+  transform: translateX(-4px);
 }
 
 /* CARD */
 .card {
+  transition: transform 0.25s ease;
   text-align: center;
-  padding: 50px 40px;
-  border-radius: 18px;
-  background: rgba(255,255,255,0.7);
+  padding: 44px 40px;
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(14px);
-  box-shadow: 0 25px 80px rgba(0,0,0,0.12);
+  box-shadow: 0 25px 70px rgba(0,0,0,0.10);
   max-width: 420px;
 }
 
 /* TEXT */
 .card h1 {
-  font-size: 70px;
+  font-size: 64px;
   margin: 0;
+  font-weight: 500;
+  letter-spacing: 0.5px;
 }
 
 .sub {
-  margin: 10px 0;
+  margin: 12px 0;
   font-size: 18px;
-  color: #6b7c93;
+  color: #7a7f87;
+  line-height: 1.4;
 }
 
 .endpoint {
-  margin-top: 18px;
-  font-size: 18px;
+  margin-top: 20px;
+  font-size: 16px;
   opacity: 0.6;
 }
 
@@ -60,7 +65,7 @@ html, body {
 @keyframes pageIn {
   from {
     opacity: 0;
-    transform: translateY(6px);
+    transform: translateY(10px);
   }
   to {
     opacity: 1;
