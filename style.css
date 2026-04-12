@@ -2,16 +2,12 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-
   font-family: Arial, sans-serif;
   color: #1c1f23;
-
-  background: linear-gradient(135deg, #f9f5fa, #f8f9fc);
-
+  background: linear-gradient(135deg, #e9fffb, #f4f6f8);
   display: flex;
   justify-content: center;
   align-items: center;
-
   animation: pageIn 0.6s ease;
 }
 
@@ -20,11 +16,9 @@ html, body {
   position: fixed;
   top: 20px;
   right: 25px;
-
   font-size: 14px;
   color: #6b7c93;
   text-decoration: none;
-
   transition: 0.2s ease;
 }
 
@@ -36,15 +30,11 @@ html, body {
 /* CARD */
 .card {
   text-align: center;
-
   padding: 50px 40px;
   border-radius: 18px;
-
   background: rgba(255,255,255,0.7);
   backdrop-filter: blur(14px);
-
   box-shadow: 0 25px 80px rgba(0,0,0,0.12);
-
   max-width: 420px;
 }
 
