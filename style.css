@@ -37,7 +37,7 @@ html, body {
 .card {
   text-align: center;
 
-  padding: 40px 35px;
+  padding: 50px 40px;
   border-radius: 18px;
 
   background: rgba(255,255,255,0.7);
@@ -56,13 +56,13 @@ html, body {
 
 .sub {
   margin: 10px 0;
-  font-size: 16px;
+  font-size: 18px;
   color: #6b7c93;
 }
 
 .endpoint {
   margin-top: 18px;
-  font-size: 16px;
+  font-size: 18px;
   opacity: 0.6;
 }
 
