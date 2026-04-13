@@ -3,8 +3,8 @@ html, body {
   padding: 0;
   height: 100%;
   font-family: Arial, sans-serif;
-  color: #1c1f23;
-  background: linear-gradient(135deg, #ffe6f1, #f8f3ff);
+   color: #1c1f23;
+  background: linear-gradient(135deg, #f2f2f4, #efe7ec);
   display: flex;
   justify-content: center;
   align-items: center;
