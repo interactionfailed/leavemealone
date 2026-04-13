@@ -24,7 +24,7 @@ html, body {
 
 .contact:hover {
   color: #111;
-  transform: translateX(-4px);
+  transform: translateX(-3px);
 }
 
 /* CARD */
