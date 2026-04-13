@@ -1,13 +1,17 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
+  min-height: 100vh;
   font-family: Arial, sans-serif;
   color: #1c1f23;
-  background: linear-gradient(135deg, #f7f7f8, #f1e8ec);
+  background: linear-gradient(135deg, #f7f7f8, #eadfe6);
+}
+
+.page-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
 }
 
 /* BACK LINK */
